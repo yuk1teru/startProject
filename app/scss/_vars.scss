@@ -1,0 +1,21 @@
+@use 'sass:math' as *;
+@use 'sass:list' as *;
+
+:root {
+  --main-black: #333;
+}
+
+@function rem($value) {
+  $remValue: div($value, 16) + rem;
+  @return $remValue;
+}
+
+$maxWidth: 1440;
+
+@function vw($value) {
+  $vwValue: calc(#{$value} / #{$maxWidth} * 100vw);
+  @return $vwValue;
+}
+
+$bodyfontsize: rem(16);
+$maxContainerWidth: rem(1200);
