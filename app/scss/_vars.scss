@@ -10,12 +10,12 @@
   @return $remValue;
 }
 
-$maxWidth: 1440;
-
 @function vw($value) {
   $vwValue: calc(#{$value} / #{$maxWidth} * 100vw);
   @return $vwValue;
 }
 
-$bodyfontsize: rem(16);
+$bodyFontSize: rem(16);
+
+$maxWidth: 1440;
 $maxContainerWidth: rem(1200);

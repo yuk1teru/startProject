@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+body {
+  font-size: $bodyFontSize;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
